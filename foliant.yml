@@ -34,6 +34,8 @@ backend_config:
       site_url: https://stingray-mobile.ru/
       site_author: AG
       repo_url: https://github.com/andrglad/testdoc
+      repo_name: andrglad/testdoc
+      edit_uri: src/
       theme:
         name: material
         language: ru
