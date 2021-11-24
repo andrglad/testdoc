@@ -27,4 +27,4 @@ jobs:
       - run: git push origin --delete gh-pages 
       - run: git subtree push --prefix docs.mkdocs origin gh-pages
       - run: git push
-#     - run: git add docs.mkdocs && git commit -m "Initial dist subtree commit"
+#      - run: git add docs.mkdocs && git commit -m "Initial dist subtree commit"
