@@ -1,0 +1,30 @@
+2021-11-24 07:20:31,712 |           flt.mkdocs |    ERROR | Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/foliant/backends/mkdocs.py", line 188, in make
+    run(
+  File "/usr/lib/python3.8/subprocess.py", line 512, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'mkdocs build -d "/usr/src/app/docs.mkdocs"' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/foliant/backends/mkdocs.py", line 200, in make
+    raise RuntimeError(f'Build failed: {exception.output.decode()}')
+RuntimeError: Build failed: [33mWARNING  -  [0mConfig value: 'pages'. Warning: The 'pages' configuration option has been deprecated and will be removed in a future release of MkDocs. Use 'nav' instead.
+[31mERROR    -  [0mConfig value: 'theme'. Error: The path set in theme.custom_dir ('/usr/src/app/__folianttmp__/docs.mkdocs.src/material') does not exist.
+Aborted with 1 Configuration Errors!
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/foliant/utils.py", line 158, in spinner
+    yield
+  File "/usr/local/lib/python3.8/dist-packages/foliant/backends/mkdocs.py", line 226, in make
+    raise RuntimeError(f'Build failed: {exception}')
+RuntimeError: Build failed: Build failed: [33mWARNING  -  [0mConfig value: 'pages'. Warning: The 'pages' configuration option has been deprecated and will be removed in a future release of MkDocs. Use 'nav' instead.
+[31mERROR    -  [0mConfig value: 'theme'. Error: The path set in theme.custom_dir ('/usr/src/app/__folianttmp__/docs.mkdocs.src/material') does not exist.
+Aborted with 1 Configuration Errors!
+
+
+2021-11-24 07:20:31,844 |                  flt | CRITICAL | No result returned by backend

@@ -18,7 +18,11 @@ chapters:
         - Работа со сканированиями:
           - Запуск сканирования: Zapusk_skanirovaniya.md
   - Руководство по установке и обновлению: AAG.md
-  - Рекомендации по безопасной разработке приложений: RG.md
+  - Рекомендации по безопасной разработке приложений:
+    - Android:
+#      - Небезопасное хранение ключевой информации:
+        - a_keystore_containing_private_keys_protected_by_a_weak_password.md
+#    - iOS:
     
 
 backend_config:
@@ -38,6 +42,7 @@ backend_config:
       edit_uri: src/
       theme:
         name: material
+#        custom_dir: material
         language: ru
         logo: img/logo.png
         features:
